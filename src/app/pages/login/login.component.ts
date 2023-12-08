@@ -29,7 +29,7 @@ export class LoginComponent {
 
   submitForm() {
     if (this.formLogin.valid) {
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/home']);
     } else {
       this.isFormInvalid = true;
     }

@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="text-center">Cadastro</h3>
+      </div>
+      <form class="card-body" [formGroup]="formRegistration">
+        <div class="login">
+          <label class="form-label">Username</label>
+          <input type="text" class="form-control" formControlName="username">
+          <div class="form-text text-danger" *ngIf="isFormControlInvalid('username')"> O username deve conter pelo menos 6 caracteres.</div>
+        </div>
+        <div class="login">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" formControlName="password">
+          <div class="form-text text-danger" *ngIf="isFormControlInvalid('password')"> A senha deve conter pelo menos 6 caracteres.</div>
+        </div>
+        <div class="login">
+          <label class="form-label">Confirm Password</label>
+          <input type="password" formControlName="confirmPassword" class="form-control">
+          <div *ngIf="isFormControlInvalid('confirmPassword')" class="text-danger">
+            <div *ngIf="formRegistration.get('confirmPassword')?.hasError('required')">A Confirm Password é obrigatória</div>
+            <div *ngIf="formRegistration.get('confirmPassword')?.hasError('mismatch')">As Senhas não são iguais.</div>
+          </div>
+        </div>
+        <div class="login">
+          <label class="form-label">Role</label>
+          <select class="form-control" formControlName="role">
+            <option value="" disabled selected>Select Role</option>
+            <option value="Influencer">Influencer</option>
+            <option value="Administrador">Administrador</option>
+          </select>
+          <div class="form-text text-danger" *ngIf="isFormControlInvalid('role')"> Selecione uma função.</div>
+        </div>
+        <button type="button" class="btn btn-primary" [disabled]="!formRegistration.valid" (click)="submitForm()">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 1px 4px 3px 1px #113c60;
+  width: 700px;
+  height: 380px;
+  margin-top: 100px;
+  align-items: center;
+  padding: 50px;
+  color: rgb(1, 1, 2);
+}
+
+.card-header {
+  text-align: center;
+}
+
+.text-center {
+  font-size: 30px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-label {
+  font-size: 20px;
+  text-align: start;
+  margin-left: 40px;
+}
+
+.form-control {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  /* text-align: center; */
+  margin-left: 40px;
+}
+
+.btn {
+  background-color: #113c60;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: 150px;
+  width: 400px;
+  text-align: center;
+}
+
+.text-danger {
+  color: red;
+  text-align: center;
+}

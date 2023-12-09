@@ -1,0 +1,40 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1c1f2b;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: end;
+}
+
+.menu button {
+  margin-right: 8px; 
+  background: none;
+  border: none;
+  color: #fff;
+  width: 150px;
+}
+
+.btn-spanProfile {
+  text-align: center;
+  width: 70px;
+}
+
+.menu button span {
+  position: absolute;
+  top: 15px;
+  right: 130px;
+}
+
+.menu button mat-icon {
+  margin-left: 10px;
+}
+
+.logo img {
+  width: 40px;
+}

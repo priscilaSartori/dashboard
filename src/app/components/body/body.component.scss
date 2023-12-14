@@ -17,7 +17,14 @@
   width: 100%;
 }  
 
-.interest {}
+.interest {
+  height: 350px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #939393;
+  width: 60%;
+}
 
 
 .age {
@@ -26,7 +33,7 @@
   border-radius: 5px;
   margin: 10px;
   box-shadow: 5px 5px 5px #939393;
-  width: 57%;
+  width: 40%;
 }
 
 .bottom-section {

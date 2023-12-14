@@ -4,29 +4,27 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import * as Highcharts from 'highcharts';
 
 @Component({
-  selector: 'app-age',
+  selector: 'app-gender',
   standalone: true,
   imports: [ChartModule, HighchartsChartModule],
-  templateUrl: './age.component.html',
-  styleUrl: './age.component.scss'
+  templateUrl: './gender.component.html',
+  styleUrl: './gender.component.scss'
 })
 
-export class AgeComponent {
-  HighchartsAge = Highcharts;
-  chartOptionsAge: Highcharts.Options = {
+export class GenderComponent {
+  HighchartsGender = Highcharts;
+  chartOptionsGender: Highcharts.Options = {
     chart: {
       type: 'pie',
       height: 325,
     },
     title: {
-      text: 'Idade'
+      text: 'Gênero'
     },
     xAxis: {
       categories: [
-        'Infantil',
-        'Jovem',
-        'Adulto',
-        'Idoso',
+        'Masculino',
+        'Feminino',
       ]
     },
     yAxis: {
@@ -39,25 +37,15 @@ export class AgeComponent {
       type: 'pie',
       data: [
         {
-          name: 'Infantil',
-          y: 4.0,
-          color: '#044342',
-        },
-        {
-          name: 'Jovem',
-          y: 23.8,
-          color: '#7e0505',
-        },
-        {
-          name: 'Adulto',
+          name: 'Masculino',
           y: 41.0,
-          color: '#ed9e20',
+          color: '#0000FF',
         },
         {
-          name: 'Idoso',
-          y: 31.2,
-          color: '#6920fb',
-        },
+          name: 'Feminino',
+          y: 59.0,
+          color: '#FF00FF',
+        }
       ]
      }
     ],

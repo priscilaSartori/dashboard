@@ -1,8 +1,46 @@
-* { 
+.divmain {
+  padding-top: 20px;
+  margin-top: 40px;
   position: absolute;
-  left: 239px;
-  padding-left: 20px;
-  height: 92%;
-  width: 81%;
-  top: 52px;
+  padding-left: 200px;
+  margin-left: 50px;
+  width: 80%;
 }
+
+.top-section {
+  
+}
+
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}  
+
+.interest {}
+
+
+.age {
+  height: 350px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #939393;
+  width: 57%;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gender {
+  height: 350px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 5px 5px 20px 5px;
+  width: 57%;
+  box-shadow: 5px 5px 5px #939393;
+}
+
+.location {}

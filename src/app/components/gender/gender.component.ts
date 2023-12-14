@@ -16,7 +16,8 @@ export class GenderComponent {
   chartOptionsGender: Highcharts.Options = {
     chart: {
       type: 'pie',
-      height: 325,
+      width: 400,
+      height: 250,
     },
     title: {
       text: 'Gênero'

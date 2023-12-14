@@ -16,7 +16,8 @@ export class AgeComponent {
   chartOptionsAge: Highcharts.Options = {
     chart: {
       type: 'pie',
-      height: 325,
+      width: 400,
+      height: 250,
     },
     title: {
       text: 'Idade'

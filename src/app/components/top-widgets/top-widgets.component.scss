@@ -1,7 +1,7 @@
 .top-container {
   display: flex;
   align-items: space-between;
-  width: 80%;
+  width: 78%;
 }
  
 .rede {
@@ -52,4 +52,10 @@
 .bottom {
   font-size: 20px;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .top-container {
+    width: 68%;
+  }
 }

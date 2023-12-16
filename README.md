@@ -11,9 +11,9 @@ Funcionalidades:
 
 # Layout
 <p align="center">
-<img width="916" alt="project-financeiro360-orcamentoMensal" src="https://github.com/priscilaSartori/dashboard/blob/main/src/assets/login.png?raw=true">
-<img width="916" alt="project-financeiro360-orcamentoMensal" src="https://github.com/priscilaSartori/dashboard/blob/main/src/assets/registro.png?raw=true">  
-<img width="916" alt="project-financeiro360-orcamentoMensal" src="https://github.com/priscilaSartori/dashboard/blob/main/src/assets/home.png?raw=true">
+<img width="916" alt="project-dashboard-login" src="https://github.com/priscilaSartori/dashboard/blob/main/src/assets/login.png?raw=true">
+<img width="916" alt="project-dashboard-registro" src="https://github.com/priscilaSartori/dashboard/blob/main/src/assets/registro.png?raw=true">  
+<img width="916" alt="project-dashboard-home" src="https://github.com/priscilaSartori/dashboard/blob/main/src/assets/home.png?raw=true">
 </p>
 
 # Tecnologias e Ferramentas

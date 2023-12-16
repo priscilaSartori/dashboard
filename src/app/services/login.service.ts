@@ -9,8 +9,10 @@ export class LoginService {
   constructor() {}
 
   setUsername(username: string): void {
-    localStorage.setItem('login', username);
-    this.loggedInUser = localStorage.getItem('login');
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('login', username);
+      this.loggedInUser = localStorage.getItem('login');
+    }
   }
 
   getUsername(): string | null {

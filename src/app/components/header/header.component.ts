@@ -22,8 +22,10 @@ export class HeaderComponent {
   ) {}
 
   ngOnInit(): void {
-    this.usuario = localStorage.getItem('login');
-    console.log(this.usuario)
+    if (typeof localStorage !== 'undefined') {
+      this.usuario = localStorage.getItem('login');
+      console.log(this.usuario)
+    }
   }
 
   toggleProfile() {

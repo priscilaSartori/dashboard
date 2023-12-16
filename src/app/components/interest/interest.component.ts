@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { ChartModule } from 'angular-highcharts';
-import { HighchartsChartModule } from 'highcharts-angular';
 import * as Highcharts from 'highcharts';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @Component({
   selector: 'app-interest',
   standalone: true,
-  imports: [ChartModule, HighchartsChartModule],
+  imports: [
+    HighchartsChartModule,
+  ],
   templateUrl: './interest.component.html',
   styleUrl: './interest.component.scss'
 })

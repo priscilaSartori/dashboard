@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ChartModule } from 'angular-highcharts';
-import { HighchartsChartModule } from 'highcharts-angular';
 import * as Highcharts from 'highcharts';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @Component({
   selector: 'app-age',
   standalone: true,
-  imports: [ChartModule, HighchartsChartModule],
+  imports: [
+    HighchartsChartModule,
+  ],
   templateUrl: './age.component.html',
   styleUrl: './age.component.scss'
 })
